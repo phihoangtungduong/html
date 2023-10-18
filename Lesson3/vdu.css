@@ -1,0 +1,49 @@
+a {
+    background-color: greenyellow;
+    text-decoration: none;
+}
+a:before{content: "+";}
+a::after{content: ">";}
+a:hover{
+    background-color: yellow;
+}
+ul.menu{
+    padding: 0px;
+    background-color: orange;
+    display: flex;
+    cursor: pointer;;
+}
+ul.menu il{
+    padding: 10px;;
+}
+ul.menu il:hover {
+    background-color: yellow;
+}
+
+.validate{
+	color: red;
+}
+.content {
+    background-color: #e5c6f7;
+    width: 600px;
+    padding: 10px; 
+    margin: 0px auto; 
+}
+.content input, .content textarea, .content label{
+    width: 100%;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+}
+.content button {
+    background-color: blue;
+    color: white;
+    width: 100%;   
+    cursor: pointer;
+    padding: 10px;
+}
+.content button:hover {
+    background-color: orange;
+}
