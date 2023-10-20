@@ -1,0 +1,135 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
+
+.head .header h1{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 40px;
+    color: #0091d4;
+}
+.head .header h2{
+    margin-top: -30px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(20, 20, 230);
+}
+.head .header {
+    background-image: linear-gradient(to right, #c6f8f5, #35b4ae);
+    height: 120px;
+    width: 100%;
+}
+
+.head .menu {
+    width: 100%;
+    display: flex;
+}
+
+.head .menu ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #77bc0e;
+    margin: 0%;
+    width: 70%;
+}
+.head .menu ul li {
+    line-height: 25px;
+    list-style-type: none;
+    padding: 10px 15px;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.head .menu ul li:hover {
+    background-color: orange;
+    color: white;
+}
+
+.head .menu .search {
+    background-color: orange;
+    padding-left: 20px;
+    padding-top: 13px;
+    width: 30%;
+    margin-left: 1px ;
+}
+
+.head .menu .search input {
+    border: none;
+}
+.head .menu .search button {
+    background-color: #77bc0e;
+    border: solid white 1px;
+    color: white;
+    cursor: pointer;
+}
+.head .menu .search button:hover {
+    background-color: red;
+}
+.main {
+    margin-top: 50px;
+    display: flex;
+}
+
+.main .main-left {
+    width: 70%;
+}
+.main .main-left h1 {
+    color: #35b4ae;
+    font-size: 30px;
+}
+.main .main-left h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .main-left p {
+    font-size: 20px;
+}
+.main-left ol{
+    font-weight: bold;
+    color: #0425b9;
+    font-size: 20px;
+}
+.main-left p {
+    font-weight: normal;
+    color: black;
+}
+.main .main-left img {
+    width: 100%;
+}
+.main .main-right{
+    width: 30%;
+    box-shadow: -1px 0px 5px -5px black;
+}
+.main-right p{
+    padding-left: 20px;
+}
+.list{
+    line-height: 30px;
+    background-color: #77bc0e;
+    margin-left: 5px;
+    border-radius: 8px 0px 8px 0px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.main-right ul li{
+    list-style-type: none;
+    border-bottom: solid #77bc0e 1px;
+}
+.main-right ul li a{
+    text-decoration: none;
+}
+.list .title{
+    background-color: orange;
+    color: #fff;
+}
+.list a {
+    color: #77bc0e;
+}
