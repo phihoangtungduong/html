@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function sum(x,y) {
+            sum = x + y;
+            return sum;
+        }
+        function sub(x,y) {
+            sub = x - y;
+            return sub;
+        }
+        function mul(x,y) {
+            mul = x * y;
+            return mul;
+        }
+        function div(x,y) {
+            div = x / y;
+            return div;
+        }
+        num1 = parseInt(prompt('Nhap so thu 1'))
+        num2 = parseInt(prompt('Nhap so thu 2'))
+        document.write('Tong la: ' + sum(num1,num2) +'<br>')
+        document.write('Hieu la: ' + sub(num1,num2) +'<br>')
+        document.write('Tich la: ' + mul(num1,num2) +'<br>')
+        document.write('Thuong la: ' + div(num1,num2) +'<br>')
+    </script>
+</body>
+</html>
