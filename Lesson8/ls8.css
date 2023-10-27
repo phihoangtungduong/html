@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+}
+.header .header-left {
+    width: 100px;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.header .header-centre p {
+    width: 100%;
+    text-align: center;
+    padding-left: 380px ;
+}
+
+.menu {
+    background-color: #4885ef;
+    margin-top: 5px;
+}
+
+.menu-main {
+    width: 35%;
+    list-style-type: none;
+	display: flex;
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.menu ul li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-right: 1px solid #fff;
+    line-height: 25px;
+}
+
+.menu li {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.panel .menu ul li:hover {
+    background-color: orange;
+}
+
+.main {
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-left {
+    width: 90%;
+}
+
+.main-left div {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-right {
+    width: 15%;
+    border: 10px solid black;
+    padding: 10px 0px 50px 10px;
+    margin: 10px;
+}
+
+.main-right h2 {
+    text-align: center;
+}
+
+.main-right li {
+    font-weight: bold;
+    list-style-type: none;
+}
