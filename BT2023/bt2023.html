@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Payment - Page</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form method="post" onsubmit="return saveData()">
+<div class="panel">
+	<div class="panel-heading">
+		Purchase Order Form
+	</div>
+	<div class="panel-body">
+		<fieldset>
+			<legend>Product Information</legend>
+			<table border="1" cellpadding="2" cellspacing="2">
+				<tr>
+					<td style="width: 120px;">Product</td>
+					<td>
+						<select required="true" id="product" onchange="changeProduct()">
+							<option value="">Select</option>
+							<option value="650">Comfort Sleeper</option>
+							<option value="975">Morgan Kids Bed</option>
+							<option value="480">Entertainment Cabinet</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Unit Price ($):</td>
+					<td>
+						<input required="true" type="number" id="unit_price" disabled="true">
+					</td>
+				</tr>
+				<tr>
+					<td>Quantity:</td>
+					<td>
+						<input required="true" type="number" id="quantity" disabled="true" onkeyup="calTotalPrice()">
+					</td>
+				</tr>
+				<tr>
+					<td>Total Price ($):</td>
+					<td>
+						<input required="true" type="number" id="total_price" disabled="true">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<table border="1" cellpadding="2" cellspacing="2">
+				<tr>
+					<td style="width: 120px;">Full Name:</td>
+					<td>
+						<input required="true" type="text" id="fullname">
+					</td>
+				</tr>
+				<tr>
+					<td>Shipping Address:</td>
+					<td>
+						<textarea required="true" rows="3" id="shipping_address"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Credit Card:</td>
+					<td>
+						<select required="true" id="credit_card" onchange="updateStatusNumber()">
+							<option value="">Select</option>
+							<option value="650">Visa</option>
+							<option value="975">Master Card</option>
+							<option value="480">American Express</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Credit Card Number:</td>
+					<td>
+						<input disabled="true" required="true" type="text" class="credit-number" pattern="[0-9]{4}" id="card-number-1">
+						<input disabled="true" required="true" type="text" class="credit-number" pattern="[0-9]{4}" id="card-number-2">
+						<input disabled="true" required="true" type="text" class="credit-number" pattern="[0-9]{4}" id="card-number-3">
+						<input disabled="true" required="true" type="text" class="credit-number" pattern="[0-9]{4}" id="card-number-4">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</div>
+	<div class="panel-footer">
+		<button class="btn-success" type="submit">Submit</button>
+		<button class="btn-warning" type="reset" onclick="deleteData()">Reset</button>
+	</div>
+</div>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
